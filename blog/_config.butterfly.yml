@@ -7,24 +7,26 @@ menu:
    Archives: /archives/ || fas fa-archive
    Tags: /tags/ || fas fa-tags
    Categories: /categories/ || fas fa-folder-open
-   List||fas fa-list:
+   娱乐爱好||fas fa-heartbeat:
      Music: /music/ || fas fa-music
      Movie: /movies/ || fas fa-video
+     图库: /GalleryGroup/ || fas fa-heart
    Link: /link/ || fas fa-link
    About: /about/ || fas fa-heart
 
+
 nav:
-  logo: # image
+  logo: https://w.wallhaven.cc/full/o5/wallhaven-o557rl.jpg
   display_title: true
   fixed: false # fixed navigation bar
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
+highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false   代码高亮风格
+highlight_copy: true # copy button  代码复制功能是否开启
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_shrink: true # 代码是否展开   true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
 code_word_wrap: false
 
@@ -40,6 +42,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
+  fab fa-github: https://github.com/milionzou || Github
+  fab fa-at:  https://mail.qq.com/cgi-bin/frame_html?sid=oHiJ3n3dMEOvMV0_&r=fee859903a681634861086df9e0cf5ad
   # fab fa-github: https://github.com/xxxxx || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
 
@@ -85,17 +89,17 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://w.wallhaven.cc/full/vq/wallhaven-vqpxwl.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
-# The banner image of home page
-index_img:
+# The banner image of home page 主頁的 top_img
+index_img: https://w.wallhaven.cc/full/q6/wallhaven-q67z9d.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://w.wallhaven.cc/full/qz/wallhaven-qzrp2r.jpg
 
 # The banner image of archive page
 archive_img:
@@ -137,9 +141,9 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: https://w.wallhaven.cc/full/9d/wallhaven-9dog68.jpg
 
 post_meta:
   page: # Home Page
@@ -201,14 +205,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+     - img: ../img/friend.jpg
+       link:
+       text: wechat add friend
+     - img: ../img/pay.jpg
+       link:
+       text: wechatpay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -343,7 +347,7 @@ facebook_comments:
   user_id: # optional
   pageSize: 10 # The number of comments to show
   order_by: social # social/time/reverse_time
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
@@ -520,10 +524,10 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://w.wallhaven.cc/full/9d/wallhaven-9dog68.jpg)
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -537,11 +541,11 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
-  alpha: 0.6
-  zIndex: -1
-  click_to_change: false
+  alpha: 0.7
+  zIndex: -2
+  click_to_change: true
   mobile: false
 
 # Fluttering Ribbon (動態彩帶)
@@ -575,7 +579,7 @@ fireworks:
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -595,10 +599,10 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f2b5'  # '\f0c1'
+  title-prefix-icon-color: #F47466      #'#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -640,7 +644,7 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -666,9 +670,9 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      icon: fab fa-steam
+      text: play with me (😏)
+      link: https://github.com/milionzou
   card_announcement:
     enable: true
     content: This is my Blog
@@ -815,7 +819,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -873,14 +877,15 @@ Open_Graph_meta:
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
-# Inject
+#Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    #aplayer音乐
+    - <div class="aplayer no-destroy" data-id="8170268502" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
