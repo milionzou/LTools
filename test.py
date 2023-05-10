@@ -1,4 +1,4 @@
 import pycharts
-
-#抽奖结果查看
-date={"101": 4,"102": 3,"103": 1,"104": 2,"105": 2,"106": 5,"107":2}
+def xiangxiaquzheng(i):
+    print('向下取整后：'+str(int(i)))
+xiangxiaquzheng(8/6)
